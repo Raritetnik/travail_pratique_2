@@ -1,9 +1,23 @@
+<!--
+    Site des informations prises:
+    https://doc.ubuntu-fr.org/tutoriel/console_commandes_de_base
+
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        td, th, tr {
+            border: 2px solid black;
+        }
+        table {
+            padding: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+    </style>
     <title>Document</title>
 </head>
 <body>
@@ -26,6 +40,34 @@
         <tr>
             <td>582-11W-MA INITIATION À LA CRÉATION DE SITE WEB</td>
             <td>Marcos Vinicius Sanches</td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <th>Commande</th>
+            <th>Description</th>
+            <th>Exemple</th>
+        </tr>
+        <tr>
+            <td>cd</td>
+            <td>La commande cd vous permet de changer de répertoire (cd = change directory). Quand vous ouvrez un terminal en mode utilisateur vous êtes dans votre répertoire personnel (/home/utilisateur).</td>
+            <td>cd /home/utilisateur/dossier      ### vous déplacera à votre répertoire (/home/utilisateur/dossier)</td>
+        </tr>
+        <tr>
+            <td>ls</td>
+            <td>La commande ls liste les fichiers et les sous-dossiers. (ls = list)</td>
+            <td>ls -l ### ceci vous donnera la liste de vos fichiers et dossiers version longue.</td>
+        </tr>
+        <tr>
+            <td>ls</td>
+            <td>La commande chmod permet de modifier les droits d'accès sur les fichiers ou répertoires. Seul le propriétaire des fichiers ou répertoires (ou root) peut faire cette manipulation.</td>
+            <td>chmod ugoa|+/-/=|rwxugo fichier*</td>
+        </tr>
+        <tr>
+            <td>chown</td>
+            <td>La commande chown permet de changer le propriétaire d'un fichier ou répertoire (chown = change owner). Seul le propriétaire du fichier (ou root) peut faire cette manipulation.</td>
+            <td>chown utilisateur2 /home/utilisateur/doc.txt  ### "utilisateur2" devient propriétaire du fichier doc.txt</td>
         </tr>
     </table>
 </body>
